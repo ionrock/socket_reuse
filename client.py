@@ -9,7 +9,8 @@ def client():
     s.sendall('eric')
     data = s.recv(1024)
     s.close()
-    print(repr(data))
+    # We could print here for debugging.
+    # print(data)
 
 
 def main():
